@@ -1,0 +1,32 @@
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+ext {
+    //Android
+    androidBuildToolsVersion = "27.0.3"
+    androidMinSdkVersion = 15
+    androidTargetSdkVersion = 26
+    androidCompileSdkVersion = 26
+
+
+    //library
+    supportLibraryVersion = '26.1.0'
+    constraintLayoutVersion = '1.1.1'
+
+    //testing
+    jUnitVersion = '4.12'
+
+    utilDependencies = [
+            supportLibrary      : "com.android.support:appcompat-v7:${supportLibraryVersion}",
+            supportDesignLibrary: "com.android.support:design:${supportLibraryVersion}",
+            constrantLayout     : "com.android.support.constraint:constraint-layout:${constraintLayoutVersion}",
+            vectorDrawable      : "com.android.support:support-vector-drawable:${supportLibraryVersion}"
+    ]
+
+    testDependencies = [
+            junit: "junit:junit:${jUnitVersion}"
+    ]
+}
