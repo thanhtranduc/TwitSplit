@@ -15,18 +15,43 @@ ext {
     //library
     supportLibraryVersion = '26.1.0'
     constraintLayoutVersion = '1.1.1'
+    daggerVersion = '2.8'
+    butterKnifeVersion = '8.8.1'
+    recyclerViewVersion = '21.0.3'
+    rxJavaVersion = '2.0.2'
+    rxAndroidVersion = '2.0.1'
+    javaxAnnotationVersion = '1.0'
+    okHttpVersion = '2.5.0'
+    gsonVersion = '2.3'
+    javaxInjectVersion = '1'
+    androidAnnotationsVersion = '21.0.3'
 
     //testing
     jUnitVersion = '4.12'
+    mockitoVersion = '1.9.5'
+    assertJVersion = '1.7.1'
 
     utilDependencies = [
             supportLibrary      : "com.android.support:appcompat-v7:${supportLibraryVersion}",
             supportDesignLibrary: "com.android.support:design:${supportLibraryVersion}",
             constrantLayout     : "com.android.support.constraint:constraint-layout:${constraintLayoutVersion}",
-            vectorDrawable      : "com.android.support:support-vector-drawable:${supportLibraryVersion}"
+            vectorDrawable      : "com.android.support:support-vector-drawable:${supportLibraryVersion}",
+            daggerCompiler      : "com.google.dagger:dagger-compiler:${daggerVersion}",
+            dagger              : "com.google.dagger:dagger:${daggerVersion}",
+            butterKnife         : "com.jakewharton:butterknife:${butterKnifeVersion}",
+            recyclerView        : "com.android.support:recyclerview-v7:${recyclerViewVersion}",
+            rxJava              : "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+            rxAndroid           : "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+            javaxAnnotation     : "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            okHttp              : "com.squareup.okhttp:okhttp:${okHttpVersion}",
+            gson                : "com.google.code.gson:gson:${gsonVersion}",
+            javaxInject         : "javax.inject:javax.inject:${javaxInjectVersion}",
+            androidAnnotations  : "com.android.support:support-annotations:${androidAnnotationsVersion}"
     ]
 
     testDependencies = [
-            junit: "junit:junit:${jUnitVersion}"
+            junit  : "junit:junit:${jUnitVersion}",
+            mockito: "org.mockito:mockito-core:${mockitoVersion}",
+            assertj: "org.assertj:assertj-core:${assertJVersion}"
     ]
 }
